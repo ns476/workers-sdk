@@ -127,6 +127,7 @@ async function resolveDevConfig(
 		persist: localPersistencePath,
 		registry: input.dev?.registry,
 		bindVectorizeToProd: input.dev?.bindVectorizeToProd ?? false,
+		imagesLocalMode: input.dev?.imagesLocalMode ?? false,
 	} satisfies StartDevWorkerOptions["dev"];
 }
 
