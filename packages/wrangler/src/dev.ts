@@ -652,6 +652,7 @@ export async function startDev(args: StartDevOptions) {
 						wasm_modules: undefined,
 						text_blobs: undefined,
 						browser: undefined,
+						images: undefined,
 						ai: args.ai,
 						version_metadata: args.version_metadata,
 						data_blobs: undefined,
@@ -1024,6 +1025,7 @@ export function getBindings(
 		services: mergedServiceBindings,
 		analytics_engine_datasets: configParam.analytics_engine_datasets,
 		browser: configParam.browser,
+		images: configParam.images,
 		ai: args.ai || configParam.ai,
 		version_metadata: args.version_metadata || configParam.version_metadata,
 		unsafe: {
